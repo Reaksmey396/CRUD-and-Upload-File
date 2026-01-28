@@ -9,11 +9,12 @@
 </head>
 <body>
     <div class="container w-50 mt-3 p-5 shadow rounded-3">
-        <form action="">
+        <form action="move.php" method="post" enctype="multipart/form-data"> <!-- enctype="multi..." can move file or image to Upload file  or somewhere-->
             <img id="image"
                 src="https://i.pinimg.com/736x/6a/32/34/6a3234793268ab7775876385d4e52525.jpg" width="200px" height="200px" class="rounded-circle" alt=""
             >
-            <input type="file" id="file" class="form-control">
+            <input name="file" type="file" id="file" class="form-control"><br>
+            <button name="btnSubmit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </body>
